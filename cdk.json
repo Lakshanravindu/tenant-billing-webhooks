@@ -1,0 +1,10 @@
+{
+  "app": "npx tsx infra/bin/app.ts",
+  "watch": {
+    "include": ["infra/**"]
+  },
+  "context": {
+    "@aws-cdk/aws-iam:minimizePolicies": true,
+    "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true
+  }
+}
